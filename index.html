@@ -197,5 +197,19 @@
     <p>Add some excitement to your day with our fun content.</p>
     <!-- Add fun content here -->
   </div>
+  <script>
+    // JavaScript function to open an image in fullscreen mode
+    function openFullscreen(element) {
+      if (element.requestFullscreen) {
+        element.requestFullscreen();
+      } else if (element.mozRequestFullScreen) { // Firefox
+        element.mozRequestFullScreen();
+      } else if (element.webkitRequestFullscreen) { // Chrome, Safari and Opera
+        element.webkitRequestFullscreen();
+      } else if (element.msRequestFullscreen) { // IE/Edge
+        element.msRequestFullscreen();
+      }
+    }
+  </script>
 </body>
 </html>
