@@ -98,6 +98,15 @@
       font-size: 18px;
       color: #666;
     }
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .button-container button {
+      margin: 0 10px;
+    }
   </style>
 </head>
 <body>
@@ -197,6 +206,13 @@
     <p>Add some excitement to your day with our fun content.</p>
     <!-- Add fun content here -->
   </div>
+
+  <!-- Add buttons for "About Website," "Contact Us" -->
+  <div class="button-container">
+    <button onclick="showAbout()">About Website</button>
+    <button onclick="showContact()">Contact Us</button>
+  </div>
+
   <script>
     // JavaScript function to open an image in fullscreen mode
     function openFullscreen(element) {
@@ -220,6 +236,7 @@
     function showContact() {
       alert("For any inquiries or feedback, please email us at thering@theringgallery.com or call us at +1-123-456-7890.");
     }
+
   </script>
 </body>
 </html>
